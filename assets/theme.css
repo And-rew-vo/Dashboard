@@ -1,0 +1,281 @@
+:root {
+  --bg: #f5f7fc;
+  --surface: #ffffff;
+  --surface-soft: #eef3fb;
+  --stroke: #d7e2f1;
+  --text: #1d2740;
+  --muted: #8fa1ba;
+  --shadow: 0 24px 60px rgba(32, 56, 98, 0.08);
+  --radius: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top right, rgba(47, 99, 255, 0.08), transparent 20%),
+    linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+  color: var(--text);
+  font-family: Inter, "Segoe UI", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid rgba(215, 226, 241, 0.85);
+  backdrop-filter: blur(16px);
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 190px;
+}
+
+.brand-mark {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #2f63ff;
+  color: white;
+  font-weight: 700;
+}
+
+.brand-text {
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.top-nav {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.top-nav-link {
+  padding: 0.8rem 1.15rem;
+  border-radius: 14px;
+  color: #6e82a4;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.top-nav-link:hover {
+  background: #edf2fb;
+  color: #2f63ff;
+}
+
+.top-nav-link.active {
+  background: #e9effb;
+  color: #2f63ff;
+  font-weight: 700;
+}
+
+.export-button {
+  border-radius: 14px;
+  border: 1px solid var(--stroke);
+  color: #6f82a4;
+  background: #f3f6fb;
+}
+
+.page-shell {
+  padding: 1.25rem 1.5rem 1.75rem;
+}
+
+.page-heading {
+  margin-bottom: 1.2rem;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 2.35rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.page-subtitle {
+  margin: 0.25rem 0 0;
+  color: #7186a9;
+  font-size: 1rem;
+}
+
+.metric-card,
+.chart-card,
+.mini-note-card,
+.insight-banner {
+  border-radius: var(--radius);
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow);
+  background: var(--surface);
+}
+
+.metric-card,
+.chart-card,
+.mini-note-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-card::before,
+.chart-card::before,
+.mini-note-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--accent-color);
+}
+
+.metric-label,
+.card-eyebrow {
+  color: #9aabc4;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.metric-value {
+  margin-top: 0.35rem;
+  font-size: 2.25rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.metric-note {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.chart-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.15rem 0;
+}
+
+.chart-title {
+  margin: 0.2rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.card-extra {
+  color: #8fa1ba;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.chart-card .card-body {
+  padding: 0.35rem 0.8rem 0.95rem;
+}
+
+.chart-graph {
+  height: 360px;
+}
+
+.chart-footer {
+  margin-top: 0.25rem;
+  color: #9aabc4;
+  font-size: 0.82rem;
+  padding: 0 0.25rem;
+}
+
+.mini-note-card .card-body {
+  padding: 1rem 1.15rem;
+}
+
+.mini-card-text {
+  font-size: 1rem;
+  line-height: 1.45;
+  margin-top: 0.5rem;
+}
+
+.insight-banner {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.75rem;
+  padding: 1rem 1.2rem;
+  background: #f3f7ff;
+}
+
+.insight-title {
+  font-weight: 800;
+}
+
+.insight-text {
+  color: #697d9f;
+}
+
+.filter-pill {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  padding: 0.85rem 1rem;
+  height: 100%;
+}
+
+.filter-label {
+  color: #7f93b3;
+  font-size: 0.78rem;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 1200px) {
+  .top-nav {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .app-header {
+    flex-wrap: wrap;
+  }
+
+  .brand-block,
+  .top-nav,
+  .export-button {
+    width: 100%;
+  }
+
+  .page-shell {
+    padding: 1rem;
+  }
+
+  .page-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-graph {
+    height: 300px;
+  }
+
+  .insight-banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
