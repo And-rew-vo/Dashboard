@@ -1,7 +1,6 @@
 :root {
   --bg: #f5f7fc;
   --surface: #ffffff;
-  --surface-soft: #eef3fb;
   --stroke: #d7e2f1;
   --text: #1d2740;
   --muted: #8fa1ba;
@@ -32,7 +31,6 @@ a {
   z-index: 20;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 1.5rem;
   padding: 1rem 1.5rem;
   background: rgba(255, 255, 255, 0.88);
@@ -41,10 +39,10 @@ a {
 }
 
 .brand-block {
+  width: 96px;
+  flex: 0 0 96px;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  min-width: 190px;
 }
 
 .brand-mark {
@@ -58,15 +56,11 @@ a {
   font-weight: 700;
 }
 
-.brand-text {
-  font-size: 1.55rem;
-  font-weight: 700;
-}
-
 .top-nav {
   display: flex;
   gap: 0.5rem;
   flex: 1;
+  justify-content: center;
 }
 
 .top-nav-link {
@@ -86,6 +80,24 @@ a {
   background: #e9effb;
   color: #2f63ff;
   font-weight: 700;
+}
+
+.header-actions {
+  width: 220px;
+  flex: 0 0 220px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.85rem;
+}
+
+.brand-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.brand-text-right {
+  text-align: right;
 }
 
 .export-button {
@@ -118,17 +130,11 @@ a {
 
 .metric-card,
 .chart-card,
-.mini-note-card,
-.insight-banner {
+.mini-note-card {
   border-radius: var(--radius);
   border: 1px solid var(--stroke);
   box-shadow: var(--shadow);
   background: var(--surface);
-}
-
-.metric-card,
-.chart-card,
-.mini-note-card {
   position: relative;
   overflow: hidden;
 }
@@ -161,9 +167,14 @@ a {
   font-weight: 800;
 }
 
+.metric-placeholder {
+  color: #c0cad9;
+}
+
 .metric-note {
   margin-top: 0.35rem;
   font-size: 0.95rem;
+  color: var(--muted);
 }
 
 .chart-card-header {
@@ -193,11 +204,8 @@ a {
   height: 360px;
 }
 
-.chart-footer {
-  margin-top: 0.25rem;
-  color: #9aabc4;
-  font-size: 0.82rem;
-  padding: 0 0.25rem;
+.split-chart-card .chart-graph {
+  height: 155px;
 }
 
 .mini-note-card .card-body {
@@ -208,23 +216,7 @@ a {
   font-size: 1rem;
   line-height: 1.45;
   margin-top: 0.5rem;
-}
-
-.insight-banner {
-  display: flex;
-  gap: 0.6rem;
-  align-items: center;
-  margin-top: 0.75rem;
-  padding: 1rem 1.2rem;
-  background: #f3f7ff;
-}
-
-.insight-title {
-  font-weight: 800;
-}
-
-.insight-text {
-  color: #697d9f;
+  color: #6e82a4;
 }
 
 .filter-pill {
@@ -246,6 +238,7 @@ a {
 @media (max-width: 1200px) {
   .top-nav {
     overflow-x: auto;
+    justify-content: flex-start;
   }
 }
 
@@ -256,8 +249,17 @@ a {
 
   .brand-block,
   .top-nav,
-  .export-button {
+  .header-actions {
     width: 100%;
+    flex: unset;
+  }
+
+  .header-actions {
+    justify-content: space-between;
+  }
+
+  .brand-text-right {
+    text-align: left;
   }
 
   .page-shell {
@@ -274,8 +276,12 @@ a {
     height: 300px;
   }
 
-  .insight-banner {
-    align-items: flex-start;
+  .split-chart-card .chart-graph {
+    height: 220px;
+  }
+
+  .header-actions {
     flex-direction: column;
+    align-items: flex-start;
   }
 }

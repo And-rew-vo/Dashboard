@@ -23,19 +23,19 @@ def build_header() -> html.Header:
 
     return html.Header(
         [
+            html.Span("Д", className="brand-mark"),
+            html.Span(APP_TITLE, className="brand-text brand-text-right"),
+            html.Nav(nav_links, className="top-nav"),
             html.Div(
                 [
-                    html.Div("Д", className="brand-mark"),
-                    html.Div(APP_TITLE, className="brand-text"),
+                    dbc.Button(
+                        TOPBAR_BUTTON,
+                        color="light",
+                        className="export-button",
+                        disabled=True,
+                    ),
                 ],
-                className="brand-block",
-            ),
-            html.Nav(nav_links, className="top-nav"),
-            dbc.Button(
-                TOPBAR_BUTTON,
-                color="light",
-                className="export-button",
-                disabled=True,
+                className="header-actions",
             ),
         ],
         className="app-header",
