@@ -1,0 +1,74 @@
+﻿country_code,country,region,income_group
+ARE,United Arab Emirates,"Middle East, North Africa, Afghanistan & Pakistan",High income
+ARG,Argentina,Latin America & Caribbean ,Upper middle income
+ARM,Armenia,Europe & Central Asia,Upper middle income
+AUS,Australia,East Asia & Pacific,High income
+AUT,Austria,Europe & Central Asia,High income
+AZE,Azerbaijan,Europe & Central Asia,Upper middle income
+BEL,Belgium,Europe & Central Asia,High income
+BGD,Bangladesh,South Asia,Lower middle income
+BGR,Bulgaria,Europe & Central Asia,High income
+BLR,Belarus,Europe & Central Asia,Upper middle income
+BRA,Brazil,Latin America & Caribbean ,Upper middle income
+CAN,Canada,North America,High income
+CHE,Switzerland,Europe & Central Asia,High income
+CHN,China,East Asia & Pacific,Upper middle income
+COL,Colombia,Latin America & Caribbean ,Upper middle income
+CZE,Czechia,Europe & Central Asia,High income
+DEU,Germany,Europe & Central Asia,High income
+EAS,East Asia & Pacific,Aggregates,Aggregates
+ECS,Europe & Central Asia,Aggregates,Aggregates
+EGY,"Egypt, Arab Rep.","Middle East, North Africa, Afghanistan & Pakistan",Lower middle income
+ESP,Spain,Europe & Central Asia,High income
+ETH,Ethiopia,Sub-Saharan Africa ,Not classified
+EUU,European Union,Aggregates,Aggregates
+FIN,Finland,Europe & Central Asia,High income
+FRA,France,Europe & Central Asia,High income
+GBR,United Kingdom,Europe & Central Asia,High income
+GEO,Georgia,Europe & Central Asia,Upper middle income
+GRC,Greece,Europe & Central Asia,High income
+HIC,High income,Aggregates,Aggregates
+HUN,Hungary,Europe & Central Asia,High income
+IDN,Indonesia,East Asia & Pacific,Upper middle income
+IND,India,South Asia,Lower middle income
+IRL,Ireland,Europe & Central Asia,High income
+IRN,"Iran, Islamic Rep.","Middle East, North Africa, Afghanistan & Pakistan",Upper middle income
+ISR,Israel,"Middle East, North Africa, Afghanistan & Pakistan",High income
+ITA,Italy,Europe & Central Asia,High income
+JPN,Japan,East Asia & Pacific,High income
+KAZ,Kazakhstan,Europe & Central Asia,Upper middle income
+KEN,Kenya,Sub-Saharan Africa ,Lower middle income
+KOR,"Korea, Rep.",East Asia & Pacific,High income
+LCN,Latin America & Caribbean ,Aggregates,Aggregates
+LIC,Low income,Aggregates,Aggregates
+LMC,Lower middle income,Aggregates,Aggregates
+MDA,Moldova,Europe & Central Asia,Upper middle income
+MEA,"Middle East, North Africa, Afghanistan & Pakistan",Aggregates,Aggregates
+MEX,Mexico,Latin America & Caribbean ,Upper middle income
+MYS,Malaysia,East Asia & Pacific,Upper middle income
+NAC,North America,Aggregates,Aggregates
+NGA,Nigeria,Sub-Saharan Africa ,Lower middle income
+NLD,Netherlands,Europe & Central Asia,High income
+NOR,Norway,Europe & Central Asia,High income
+NZL,New Zealand,East Asia & Pacific,High income
+PAK,Pakistan,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income
+PHL,Philippines,East Asia & Pacific,Lower middle income
+POL,Poland,Europe & Central Asia,High income
+PRT,Portugal,Europe & Central Asia,High income
+ROU,Romania,Europe & Central Asia,High income
+RUS,Russian Federation,Europe & Central Asia,High income
+SAS,South Asia,Aggregates,Aggregates
+SAU,Saudi Arabia,"Middle East, North Africa, Afghanistan & Pakistan",High income
+SGP,Singapore,East Asia & Pacific,High income
+SSF,Sub-Saharan Africa ,Aggregates,Aggregates
+SVK,Slovak Republic,Europe & Central Asia,High income
+SWE,Sweden,Europe & Central Asia,High income
+THA,Thailand,East Asia & Pacific,Upper middle income
+TUR,Turkiye,Europe & Central Asia,Upper middle income
+UKR,Ukraine,Europe & Central Asia,Upper middle income
+UMC,Upper middle income,Aggregates,Aggregates
+USA,United States,North America,High income
+UZB,Uzbekistan,Europe & Central Asia,Lower middle income
+VNM,Viet Nam,East Asia & Pacific,Lower middle income
+WLD,World,Aggregates,Aggregates
+ZAF,South Africa,Sub-Saharan Africa ,Upper middle income

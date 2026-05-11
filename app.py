@@ -1,7 +1,7 @@
 from dash import Dash, Input, Output, dcc, html
 import dash_bootstrap_components as dbc
 
-from pages import age_structure, economy, migration, overview
+from pages import age_structure, economy, migration, overview, scenarios, world_map
 from ui import APP_TITLE, HEADER_TABS, TOPBAR_BUTTON
 
 
@@ -57,6 +57,8 @@ app.layout = html.Div(
     Output("nav-age", "className"),
     Output("nav-migration", "className"),
     Output("nav-economy", "className"),
+    Output("nav-map", "className"),
+    Output("nav-scenarios", "className"),
     Input("url", "pathname"),
 )
 def highlight_nav(pathname: str):
@@ -66,6 +68,8 @@ def highlight_nav(pathname: str):
         "nav-age": current == "/age-structure",
         "nav-migration": current == "/migration",
         "nav-economy": current == "/economy",
+        "nav-map": current == "/map",
+        "nav-scenarios": current == "/scenarios",
     }
     return tuple(
         "top-nav-link active" if active_map[tab["id"]] else "top-nav-link"
@@ -81,6 +85,8 @@ def render_page(pathname: str):
         "/age-structure": age_structure.layout,
         "/migration": migration.layout,
         "/economy": economy.layout,
+        "/map": world_map.layout,
+        "/scenarios": scenarios.layout,
     }
     return routes.get(pathname or "/", overview.layout)
 
