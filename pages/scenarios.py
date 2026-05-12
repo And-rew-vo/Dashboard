@@ -27,7 +27,7 @@ def _kpis():
 
 def _scenario_projection() -> go.Figure:
     """Условные сценарии доли 65+ к 2050: базовый, низкая миграция, высокая миграция.
-    Базовая траектория — линейная экстраполяция тренда последних 20 лет."""
+    Базовая траектория - линейная экстраполяция тренда последних 20 лет."""
     df = D.load()
     fig = go.Figure()
     base_2050_targets = {}
@@ -97,7 +97,7 @@ def _dev_vs_dev() -> go.Figure:
 
 
 def _investment_chart() -> go.Figure:
-    """Инвестиции (% ВВП) по группам стран — долгосрочная устойчивость."""
+    """Инвестиции (% ВВП) по группам стран - долгосрочная устойчивость."""
     df = D.load()
     df = df[df["indicator"] == "NE.GDI.TOTL.ZS"]
     fig = go.Figure()
@@ -159,7 +159,7 @@ layout = dbc.Container(
                 dbc.Col(
                     chart_card("Прогноз", "Доля 65+: история и линейная проекция до 2050",
                                CARD_COLORS["blue"], _scenario_projection(),
-                               extra="пунктир — экстраполяция"),
+                               extra="пунктир - экстраполяция"),
                     lg=7, className="mb-4",
                 ),
                 dbc.Col(

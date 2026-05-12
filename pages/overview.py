@@ -15,7 +15,7 @@ def _world_kpis():
     df = D.load()
     wld = df[df["country_code"] == "WLD"]
     if wld.empty:
-        return ("—", "—", "—", "—", "—", "—", "—", "—")
+        return ("-", "-", "-", "-", "-", "-", "-", "-")
     pop = wld[wld["indicator"] == "SP.POP.TOTL"].sort_values("year").iloc[-1]
     p65 = wld[wld["indicator"] == "SP.POP.65UP.TO.ZS"].sort_values("year").iloc[-1]
     dpnd = wld[wld["indicator"] == "SP.POP.DPND"].sort_values("year").iloc[-1]
@@ -67,7 +67,6 @@ def _top_old_countries() -> go.Figure:
 def _migration_world() -> go.Figure:
     df = D.load()
     df = df[(df["indicator"] == "SM.POP.NETM") & (~df["is_aggregate"])]
-    # Aggregate by year — sum positive (receivers) vs negative (donors)
     df["sign"] = df["value"].apply(lambda v: "Реципиенты" if v > 0 else "Доноры")
     grouped = df.groupby(["year", "sign"])["value"].sum().reset_index()
     fig = go.Figure()
@@ -94,7 +93,7 @@ layout = dbc.Container(
                 html.H1("Старение населения и глобальная миграция", className="page-title"),
                 html.P("Анализ влияния демографических сдвигов и миграционных потоков "
                        "на макроэкономическую устойчивость стран мира. "
-                       "Данные: World Bank — Population Estimates, WDI, Net Migration.",
+                       "Данные: World Bank - Population Estimates, WDI, Net Migration.",
                        className="page-subtitle"),
             ],
             className="page-heading",

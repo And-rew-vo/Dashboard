@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 
 
 APP_TITLE = "Демография и макроэкономика"
-TOPBAR_BUTTON = "Источник: World Bank"
+TOPBAR_BUTTON = "Студенты: Волов, Тарнов, Черевко"
 
 HEADER_TABS = [
     {"id": "nav-overview", "label": "Обзор", "href": "/overview"},
