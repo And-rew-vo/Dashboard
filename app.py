@@ -8,6 +8,7 @@ from ui import APP_TITLE, HEADER_TABS, TOPBAR_BUTTON
 external_stylesheets = [dbc.themes.YETI]
 app = Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
 app.title = APP_TITLE
+server = app.server  # WSGI entrypoint для PythonAnywhere
 
 
 def build_header() -> html.Header:
